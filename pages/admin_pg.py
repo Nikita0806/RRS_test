@@ -1,7 +1,7 @@
 import os
 import time
 import allure
-# import keyboard as keyboard
+import keyboard as keyboard
 from selenium.webdriver.chrome import webdriver
 from selenium.webdriver.common.by import By
 from base.base_page import BasePage
@@ -109,11 +109,11 @@ class RrsAdminPage(BasePage):
     # keyboard.press('enter')       # вводим клавишу Enter
     # keyboard.release('enter')     # выходим из ввода клавишу Enter
 
-    # @allure.step("Click enter")
-    # def enter(self):
-    #     keyboard.press('enter')
-    #     keyboard.release('enter')
-    #     time.sleep(10)
+    @allure.step("Click enter")
+    def enter(self):
+        keyboard.press('enter')
+        keyboard.release('enter')
+        time.sleep(10)
 
 
     # @allure.step("Click on submit button")
