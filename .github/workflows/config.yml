@@ -1,4 +1,4 @@
-name: UI Tests                                                     # Имя наших тестов
+name: UI Tests                                                      # Имя наших тестов
 
 on: workflow_dispatch                                               # триггер для запуска теста
 
@@ -20,8 +20,8 @@ jobs:                                                               # серви
         env:                                                        # переменные
           LOGIN: ${{ secrets.LOGIN }}                               # логин
           PASSWORD: ${{ secrets.PASSWORD }}                         # пароль
-          LOGIN_A: ${{ secrets.LOGIN_A }}                           # логин
-          PASSWORD_A: ${{ secrets.PASSWORD_A }}                     # пароль
+          LOGIN_A: ${{ secrets.LOGIN_A }}                             # логин
+          PASSWORD_A: ${{ secrets.PASSWORD_A }}                       # пароль
         run: |                                                      # команда
           docker-compose up --exit-code-from regression || true     
 
@@ -44,4 +44,4 @@ jobs:                                                               # серви
           token: ${{ secrets.CI_TOKEN }}                            #
           branch: gh-pages                                          #
           folder: allure-report                                     #
-          clean: true
+          clean: true                                               #
