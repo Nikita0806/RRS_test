@@ -8,13 +8,13 @@
         "name" : "TestAdmin",
         "children" : [ {
           "name" : "Admin test",
-          "uid" : "7a038de193e3d32f",
+          "uid" : "f253fafbcc7a05e6",
           "parentUid" : "4aba0dcdf511aeee67d507c357c37350",
           "status" : "broken",
           "time" : {
-            "start" : 1709546073349,
-            "stop" : 1709546098242,
-            "duration" : 24893
+            "start" : 1709546670638,
+            "stop" : 1709546696682,
+            "duration" : 26044
           },
           "flaky" : false,
           "newFailed" : false,
@@ -23,48 +23,6 @@
         "uid" : "4aba0dcdf511aeee67d507c357c37350"
       } ],
       "uid" : "f577c374f0fb93575859965c5da3fb13"
-    }, {
-      "name" : "test_rrs_login",
-      "children" : [ {
-        "name" : "TestLogin",
-        "children" : [ {
-          "name" : "Login",
-          "uid" : "3c592114ba53e5ee",
-          "parentUid" : "f7d85f69af3ca24f74c9610fef0132c4",
-          "status" : "passed",
-          "time" : {
-            "start" : 1709546098697,
-            "stop" : 1709546103688,
-            "duration" : 4991
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "f7d85f69af3ca24f74c9610fef0132c4"
-      } ],
-      "uid" : "da87988f7778e20dc204c009ea55580e"
-    }, {
-      "name" : "test_rrs_search",
-      "children" : [ {
-        "name" : "TestSearch",
-        "children" : [ {
-          "name" : "Search test",
-          "uid" : "fd2fe8fb342419d0",
-          "parentUid" : "7881ddb86ff66af81561de32e6f3b2ef",
-          "status" : "broken",
-          "time" : {
-            "start" : 1709546104074,
-            "stop" : 1709546110459,
-            "duration" : 6385
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "7881ddb86ff66af81561de32e6f3b2ef"
-      } ],
-      "uid" : "0b5461f1b8022af41614ce892f79a967"
     } ],
     "uid" : "e387fa4bb326b54ea8c19c2822aba374"
   } ],

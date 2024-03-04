@@ -3,39 +3,22 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "AttributeError: module 'selenium.webdriver.support.expected_conditions' has no attribute 'find_element_by_tag_name'",
+      "name" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Скачать отчет по поставщикам?\nMessage: unexpected alert open: {Alert text : Скачать отчет по поставщикам?}\n  (Session info: headless chrome=112.0.5615.165)",
       "children" : [ {
         "name" : "Admin test",
-        "uid" : "7a038de193e3d32f",
-        "parentUid" : "acb6c1eefbd1643b6115531c3c0a6033",
+        "uid" : "f253fafbcc7a05e6",
+        "parentUid" : "810fd5bf25fa76d85dd4de333a925f02",
         "status" : "broken",
         "time" : {
-          "start" : 1709546073349,
-          "stop" : 1709546098242,
-          "duration" : 24893
+          "start" : 1709546670638,
+          "stop" : 1709546696682,
+          "duration" : 26044
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "acb6c1eefbd1643b6115531c3c0a6033"
-    }, {
-      "name" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?\nMessage: unexpected alert open: {Alert text : Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?}\n  (Session info: headless chrome=112.0.5615.165)",
-      "children" : [ {
-        "name" : "Search test",
-        "uid" : "fd2fe8fb342419d0",
-        "parentUid" : "5324f720c9e2f9fa41f891a31355ae5c",
-        "status" : "broken",
-        "time" : {
-          "start" : 1709546104074,
-          "stop" : 1709546110459,
-          "duration" : 6385
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "5324f720c9e2f9fa41f891a31355ae5c"
+      "uid" : "810fd5bf25fa76d85dd4de333a925f02"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],

@@ -141,13 +141,22 @@
   "275dd22749e08fb0da5462ae99fdae0b" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 6,
+      "broken" : 7,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 6
+      "total" : 7
     },
     "items" : [ {
+      "uid" : "f253fafbcc7a05e6",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Скачать отчет по поставщикам?\nMessage: unexpected alert open: {Alert text : Скачать отчет по поставщикам?}\n  (Session info: headless chrome=112.0.5615.165)",
+      "time" : {
+        "start" : 1709546670638,
+        "stop" : 1709546696682,
+        "duration" : 26044
+      }
+    }, {
       "uid" : "7a038de193e3d32f",
       "status" : "broken",
       "statusDetails" : "AttributeError: module 'selenium.webdriver.support.expected_conditions' has no attribute 'find_element_by_tag_name'",

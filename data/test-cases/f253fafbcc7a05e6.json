@@ -1,0 +1,498 @@
+{
+  "uid" : "f253fafbcc7a05e6",
+  "name" : "Admin test",
+  "fullName" : "tests.test_rrs_admin.TestAdmin#test_login",
+  "historyId" : "275dd22749e08fb0da5462ae99fdae0b",
+  "time" : {
+    "start" : 1709546670638,
+    "stop" : 1709546696682,
+    "duration" : 26044
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Скачать отчет по поставщикам?\nMessage: unexpected alert open: {Alert text : Скачать отчет по поставщикам?}\n  (Session info: headless chrome=112.0.5615.165)",
+  "statusTrace" : "self = <test_rrs_admin.TestAdmin object at 0x7f7a5ec30a40>\n\n    @allure.title(\"Admin test\")\n    @allure.severity(\"Medium\")\n    @pytest.mark.smoke\n    def test_login(self):\n        self.rrs_admin.open()                               # открытие страницы\n        self.rrs_admin.enter_login(self.data.LOGIN_A)         # ввод логина\n        self.rrs_admin.enter_password(self.data.PASSWORD_A)   # ввод пароля\n        self.rrs_admin.click_submit_button()                # нажатие на кнопку входа\n        self.rrs_admin.drop_down_list()                     # нажатие на выпадающий список\n        self.rrs_admin.report()                             # нажатие на отчет\n        self.rrs_admin.suppliers_report()                   # выбор нужного отчета\n        self.rrs_admin.add_report()                         # создание нового отчета\n        self.rrs_admin.data_input_start('01.02.2024')           # ввод даты\n        self.rrs_admin.timer_enter_start()                  # выбор времени\n        self.rrs_admin.data_input_end('29.02.2024')          # ввод даты\n        self.rrs_admin.timer_enter_and()                    # выбор времени\n        self.rrs_admin.scrol_down()                         # скролл\n        self.rrs_admin.suppliers_all()                      # все поставщики\n        self.rrs_admin.enter_report()                       # нажатие формирование отчета\n        self.rrs_admin.spiner()                             # ожидание когда пропадёт спинер\n        self.rrs_admin.scrol_down()                         # скролл вниз\n        self.rrs_admin.make_screenshot(\"Screenshot\")\n        self.rrs_admin.export()                             # нажатие на экспорт\n>       self.rrs_admin.enter()                              # нажатие на enter Не знаю как заставить линукс понимать нажатие на эентер\n\ntests/test_rrs_admin.py:31: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/admin_pg.py:114: in enter\n    self.wait.until(EC.presence_of_element_located(self.BODY)).send_keys(Keys.ENTER)\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:96: in until\n    value = method(self._driver)\n../local/lib/python3.12/site-packages/selenium/webdriver/support/expected_conditions.py:84: in _predicate\n    return driver.find_element(*locator)\n../local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:741: in find_element\n    return self.execute(Command.FIND_ELEMENT, {\"using\": by, \"value\": value})[\"value\"]\n../local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:347: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7f7a5ebf5eb0>\nresponse = {'status': 500, 'value': '{\"value\":{\"data\":{\"text\":\"Скачать отчет по поставщикам?\"},\"error\":\"unexpected alert open\",\"m...n: {Alert text : Скачать отчет по поставщикам?}\\\\n  (Session info: headless chrome=112.0.5615.165)\",\"stacktrace\":\"\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get(\"status\", None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\"value\", None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\"value\"]\n                    status = value.get(\"error\", None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\"message\")\n                    else:\n                        message = value.get(\"message\", None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\"__\")]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\"value\"]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and \"message\" in value:\n            message = value[\"message\"]\n    \n        screen = None  # type: ignore[assignment]\n        if \"screen\" in value:\n            screen = value[\"screen\"]\n    \n        stacktrace = None\n        st_value = value.get(\"stackTrace\") or value.get(\"stacktrace\")\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\"\\n\")\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\"lineNumber\", \"\")\n                        file = frame.get(\"fileName\", \"<anonymous>\")\n                        if line:\n                            file = f\"{file}:{line}\"\n                        meth = frame.get(\"methodName\", \"<anonymous>\")\n                        if \"className\" in frame:\n                            meth = f\"{frame['className']}.{meth}\"\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \"data\" in value:\n                alert_text = value[\"data\"].get(\"text\")\n            elif \"alert\" in value:\n                alert_text = value[\"alert\"].get(\"text\")\n>           raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\nE           selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Скачать отчет по поставщикам?\nE           Message: unexpected alert open: {Alert text : Скачать отчет по поставщикам?}\nE             (Session info: headless chrome=112.0.5615.165)\n\n../local/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py:228: UnexpectedAlertPresentException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1709546670636,
+      "stop" : 1709546670637,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1709546670249,
+      "stop" : 1709546670636,
+      "duration" : 387
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Скачать отчет по поставщикам?\nMessage: unexpected alert open: {Alert text : Скачать отчет по поставщикам?}\n  (Session info: headless chrome=112.0.5615.165)",
+    "statusTrace" : "self = <test_rrs_admin.TestAdmin object at 0x7f7a5ec30a40>\n\n    @allure.title(\"Admin test\")\n    @allure.severity(\"Medium\")\n    @pytest.mark.smoke\n    def test_login(self):\n        self.rrs_admin.open()                               # открытие страницы\n        self.rrs_admin.enter_login(self.data.LOGIN_A)         # ввод логина\n        self.rrs_admin.enter_password(self.data.PASSWORD_A)   # ввод пароля\n        self.rrs_admin.click_submit_button()                # нажатие на кнопку входа\n        self.rrs_admin.drop_down_list()                     # нажатие на выпадающий список\n        self.rrs_admin.report()                             # нажатие на отчет\n        self.rrs_admin.suppliers_report()                   # выбор нужного отчета\n        self.rrs_admin.add_report()                         # создание нового отчета\n        self.rrs_admin.data_input_start('01.02.2024')           # ввод даты\n        self.rrs_admin.timer_enter_start()                  # выбор времени\n        self.rrs_admin.data_input_end('29.02.2024')          # ввод даты\n        self.rrs_admin.timer_enter_and()                    # выбор времени\n        self.rrs_admin.scrol_down()                         # скролл\n        self.rrs_admin.suppliers_all()                      # все поставщики\n        self.rrs_admin.enter_report()                       # нажатие формирование отчета\n        self.rrs_admin.spiner()                             # ожидание когда пропадёт спинер\n        self.rrs_admin.scrol_down()                         # скролл вниз\n        self.rrs_admin.make_screenshot(\"Screenshot\")\n        self.rrs_admin.export()                             # нажатие на экспорт\n>       self.rrs_admin.enter()                              # нажатие на enter Не знаю как заставить линукс понимать нажатие на эентер\n\ntests/test_rrs_admin.py:31: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/admin_pg.py:114: in enter\n    self.wait.until(EC.presence_of_element_located(self.BODY)).send_keys(Keys.ENTER)\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:96: in until\n    value = method(self._driver)\n../local/lib/python3.12/site-packages/selenium/webdriver/support/expected_conditions.py:84: in _predicate\n    return driver.find_element(*locator)\n../local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:741: in find_element\n    return self.execute(Command.FIND_ELEMENT, {\"using\": by, \"value\": value})[\"value\"]\n../local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:347: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7f7a5ebf5eb0>\nresponse = {'status': 500, 'value': '{\"value\":{\"data\":{\"text\":\"Скачать отчет по поставщикам?\"},\"error\":\"unexpected alert open\",\"m...n: {Alert text : Скачать отчет по поставщикам?}\\\\n  (Session info: headless chrome=112.0.5615.165)\",\"stacktrace\":\"\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get(\"status\", None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\"value\", None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\"value\"]\n                    status = value.get(\"error\", None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\"message\")\n                    else:\n                        message = value.get(\"message\", None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\"__\")]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\"value\"]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and \"message\" in value:\n            message = value[\"message\"]\n    \n        screen = None  # type: ignore[assignment]\n        if \"screen\" in value:\n            screen = value[\"screen\"]\n    \n        stacktrace = None\n        st_value = value.get(\"stackTrace\") or value.get(\"stacktrace\")\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\"\\n\")\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\"lineNumber\", \"\")\n                        file = frame.get(\"fileName\", \"<anonymous>\")\n                        if line:\n                            file = f\"{file}:{line}\"\n                        meth = frame.get(\"methodName\", \"<anonymous>\")\n                        if \"className\" in frame:\n                            meth = f\"{frame['className']}.{meth}\"\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \"data\" in value:\n                alert_text = value[\"data\"].get(\"text\")\n            elif \"alert\" in value:\n                alert_text = value[\"alert\"].get(\"text\")\n>           raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\nE           selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Скачать отчет по поставщикам?\nE           Message: unexpected alert open: {Alert text : Скачать отчет по поставщикам?}\nE             (Session info: headless chrome=112.0.5615.165)\n\n../local/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py:228: UnexpectedAlertPresentException",
+    "steps" : [ {
+      "name" : "Open http://raros3.ultra-production.ru/admin page",
+      "time" : {
+        "start" : 1709546670638,
+        "stop" : 1709546671954,
+        "duration" : 1316
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter login",
+      "time" : {
+        "start" : 1709546671955,
+        "stop" : 1709546672006,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "'garpixadmin'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Enter password",
+      "time" : {
+        "start" : 1709546672006,
+        "stop" : 1709546672064,
+        "duration" : 58
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "'4HA65rdTmGrLswHf'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Click on submit button",
+      "time" : {
+        "start" : 1709546672064,
+        "stop" : 1709546674599,
+        "duration" : 2535
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Drop down list",
+      "time" : {
+        "start" : 1709546674600,
+        "stop" : 1709546674641,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Reports",
+      "time" : {
+        "start" : 1709546674641,
+        "stop" : 1709546675572,
+        "duration" : 931
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Suppliers report",
+      "time" : {
+        "start" : 1709546675572,
+        "stop" : 1709546676957,
+        "duration" : 1385
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Add report",
+      "time" : {
+        "start" : 1709546676957,
+        "stop" : 1709546678207,
+        "duration" : 1250
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Data input start",
+      "time" : {
+        "start" : 1709546678208,
+        "stop" : 1709546678273,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "data_start",
+        "value" : "'01.02.2024'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Timer enter start",
+      "time" : {
+        "start" : 1709546678273,
+        "stop" : 1709546678327,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Data input end",
+      "time" : {
+        "start" : 1709546678327,
+        "stop" : 1709546678384,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "data_and",
+        "value" : "'29.02.2024'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Timer enter end",
+      "time" : {
+        "start" : 1709546678384,
+        "stop" : 1709546678428,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Scrol http://raros3.ultra-production.ru/admin page",
+      "time" : {
+        "start" : 1709546678428,
+        "stop" : 1709546678431,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Suppliers all",
+      "time" : {
+        "start" : 1709546678431,
+        "stop" : 1709546678493,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter report",
+      "time" : {
+        "start" : 1709546678494,
+        "stop" : 1709546679966,
+        "duration" : 1472
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Spiner",
+      "time" : {
+        "start" : 1709546679966,
+        "stop" : 1709546696417,
+        "duration" : 16451
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Scrol http://raros3.ultra-production.ru/admin page",
+      "time" : {
+        "start" : 1709546696417,
+        "stop" : 1709546696420,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Export report",
+      "time" : {
+        "start" : 1709546696616,
+        "stop" : 1709546696676,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click enter",
+      "time" : {
+        "start" : 1709546696677,
+        "stop" : 1709546696679,
+        "duration" : 2
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Скачать отчет по поставщикам?\nMessage: unexpected alert open: {Alert text : Скачать отчет по поставщикам?}\n  (Session info: headless chrome=112.0.5615.165)\n\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/admin_pg.py\", line 114, in enter\n    self.wait.until(EC.presence_of_element_located(self.BODY)).send_keys(Keys.ENTER)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 96, in until\n    value = method(self._driver)\n            ^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/support/expected_conditions.py\", line 84, in _predicate\n    return driver.find_element(*locator)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py\", line 741, in find_element\n    return self.execute(Command.FIND_ELEMENT, {\"using\": by, \"value\": value})[\"value\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py\", line 347, in execute\n    self.error_handler.check_response(response)\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py\", line 228, in check_response\n    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "f8953783179bc4d2",
+      "name" : "Screenshot",
+      "source" : "f8953783179bc4d2.png",
+      "type" : "image/png",
+      "size" : 71962
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 19,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1709546696751,
+      "stop" : 1709546696835,
+      "duration" : 84
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Admin"
+  }, {
+    "name" : "severity",
+    "value" : "Medium"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_rrs_admin"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAdmin"
+  }, {
+    "name" : "host",
+    "value" : "da145f8d6ea2"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_rrs_admin"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 7,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "7a038de193e3d32f",
+        "status" : "broken",
+        "statusDetails" : "AttributeError: module 'selenium.webdriver.support.expected_conditions' has no attribute 'find_element_by_tag_name'",
+        "time" : {
+          "start" : 1709546073349,
+          "stop" : 1709546098242,
+          "duration" : 24893
+        }
+      }, {
+        "uid" : "abcfe87ddf7f6398",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1709545786537,
+          "stop" : 1709545918962,
+          "duration" : 132425
+        }
+      }, {
+        "uid" : "af4417b17c58decc",
+        "status" : "broken",
+        "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'dumpkeys'",
+        "time" : {
+          "start" : 1709545110817,
+          "stop" : 1709545138506,
+          "duration" : 27689
+        }
+      }, {
+        "uid" : "6c61660440b8e4fa",
+        "status" : "broken",
+        "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'dumpkeys'",
+        "time" : {
+          "start" : 1709544843845,
+          "stop" : 1709544868603,
+          "duration" : 24758
+        }
+      }, {
+        "uid" : "2f35c739fbea224a",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+        "time" : {
+          "start" : 1709544655298,
+          "stop" : 1709544655298,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "bb892292f3376cee",
+        "status" : "broken",
+        "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'dumpkeys'",
+        "time" : {
+          "start" : 1709543077004,
+          "stop" : 1709543101953,
+          "duration" : 24949
+        }
+      } ]
+    },
+    "tags" : [ "smoke" ]
+  },
+  "source" : "f253fafbcc7a05e6.json",
+  "parameterValues" : [ ]
+}
