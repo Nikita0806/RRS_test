@@ -1,52 +1,52 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "12050e175f60",
+    "name" : "9b9534b36db1",
     "children" : [ {
       "name" : "1-MainThread",
       "children" : [ {
-        "name" : "Search test",
-        "uid" : "18a28ff7d34885c4",
-        "parentUid" : "5bf86a3bf75e768d16ea37efd6c10d09",
+        "name" : "Admin test",
+        "uid" : "6c61660440b8e4fa",
+        "parentUid" : "67b6ce44a15885d922dcb9662d67b667",
         "status" : "broken",
         "time" : {
-          "start" : 1709544656055,
-          "stop" : 1709544656055,
-          "duration" : 0
+          "start" : 1709544843845,
+          "stop" : 1709544868603,
+          "duration" : 24758
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Admin test",
-        "uid" : "2f35c739fbea224a",
-        "parentUid" : "5bf86a3bf75e768d16ea37efd6c10d09",
-        "status" : "broken",
+        "name" : "Search test",
+        "uid" : "82072eb1529e1d51",
+        "parentUid" : "67b6ce44a15885d922dcb9662d67b667",
+        "status" : "passed",
         "time" : {
-          "start" : 1709544655298,
-          "stop" : 1709544655298,
-          "duration" : 0
+          "start" : 1709544874328,
+          "stop" : 1709544881982,
+          "duration" : 7654
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Login",
-        "uid" : "7005382e0e9cfdb8",
-        "parentUid" : "5bf86a3bf75e768d16ea37efd6c10d09",
-        "status" : "broken",
+        "uid" : "b6904859225ae80d",
+        "parentUid" : "67b6ce44a15885d922dcb9662d67b667",
+        "status" : "passed",
         "time" : {
-          "start" : 1709544655730,
-          "stop" : 1709544655730,
-          "duration" : 0
+          "start" : 1709544869121,
+          "stop" : 1709544873944,
+          "duration" : 4823
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "5bf86a3bf75e768d16ea37efd6c10d09"
+      "uid" : "67b6ce44a15885d922dcb9662d67b667"
     } ],
-    "uid" : "98794780177a9352d2d01be8c3a70186"
+    "uid" : "1a21608f299d665da19e39c7cf69ad84"
   } ],
   "name" : "timeline"
 }
