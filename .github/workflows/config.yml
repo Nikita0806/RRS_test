@@ -1,4 +1,4 @@
-name: UI Tests Full                                                     # Имя наших тестов
+name: UI Tests                                                     # Имя наших тестов
 
 on: workflow_dispatch                                               # триггер для запуска теста
 
