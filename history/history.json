@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "276e72cc0f9207b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1709543102477,
+        "stop" : 1709543106976,
+        "duration" : 4499
+      }
+    }, {
       "uid" : "951c7fdad7328aa8",
       "status" : "passed",
       "time" : {
@@ -23,17 +31,45 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "4c9db0b8b6d64527",
+      "status" : "passed",
+      "time" : {
+        "start" : 1709543107360,
+        "stop" : 1709543116000,
+        "duration" : 8640
+      }
+    }, {
       "uid" : "a3037c7f42aeffd2",
       "status" : "passed",
       "time" : {
         "start" : 1709542841879,
         "stop" : 1709542850561,
         "duration" : 8682
+      }
+    } ]
+  },
+  "275dd22749e08fb0da5462ae99fdae0b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bb892292f3376cee",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'dumpkeys'",
+      "time" : {
+        "start" : 1709543077004,
+        "stop" : 1709543101953,
+        "duration" : 24949
       }
     } ]
   }

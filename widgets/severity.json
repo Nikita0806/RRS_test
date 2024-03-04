@@ -1,20 +1,30 @@
 [ {
-  "uid" : "951c7fdad7328aa8",
-  "name" : "Login",
+  "uid" : "bb892292f3376cee",
+  "name" : "Admin test",
   "time" : {
-    "start" : 1709542836486,
-    "stop" : 1709542841466,
-    "duration" : 4980
+    "start" : 1709543077004,
+    "stop" : 1709543101953,
+    "duration" : 24949
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4c9db0b8b6d64527",
+  "name" : "Search test",
+  "time" : {
+    "start" : 1709543107360,
+    "stop" : 1709543116000,
+    "duration" : 8640
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a3037c7f42aeffd2",
-  "name" : "Search test",
+  "uid" : "276e72cc0f9207b1",
+  "name" : "Login",
   "time" : {
-    "start" : 1709542841879,
-    "stop" : 1709542850561,
-    "duration" : 8682
+    "start" : 1709543102477,
+    "stop" : 1709543106976,
+    "duration" : 4499
   },
   "status" : "passed",
   "severity" : "normal"

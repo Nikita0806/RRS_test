@@ -1,39 +1,52 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "de889f12fc6d",
+    "name" : "7ad8d37d03f1",
     "children" : [ {
       "name" : "1-MainThread",
       "children" : [ {
-        "name" : "Login",
-        "uid" : "951c7fdad7328aa8",
-        "parentUid" : "721e2c781811fad1f7f92fbfe6520621",
+        "name" : "Search test",
+        "uid" : "4c9db0b8b6d64527",
+        "parentUid" : "6c3fb7aca869426686726f9934df8e07",
         "status" : "passed",
         "time" : {
-          "start" : 1709542836486,
-          "stop" : 1709542841466,
-          "duration" : 4980
+          "start" : 1709543107360,
+          "stop" : 1709543116000,
+          "duration" : 8640
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Search test",
-        "uid" : "a3037c7f42aeffd2",
-        "parentUid" : "721e2c781811fad1f7f92fbfe6520621",
+        "name" : "Admin test",
+        "uid" : "bb892292f3376cee",
+        "parentUid" : "6c3fb7aca869426686726f9934df8e07",
+        "status" : "broken",
+        "time" : {
+          "start" : 1709543077004,
+          "stop" : 1709543101953,
+          "duration" : 24949
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login",
+        "uid" : "276e72cc0f9207b1",
+        "parentUid" : "6c3fb7aca869426686726f9934df8e07",
         "status" : "passed",
         "time" : {
-          "start" : 1709542841879,
-          "stop" : 1709542850561,
-          "duration" : 8682
+          "start" : 1709543102477,
+          "stop" : 1709543106976,
+          "duration" : 4499
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "721e2c781811fad1f7f92fbfe6520621"
+      "uid" : "6c3fb7aca869426686726f9934df8e07"
     } ],
-    "uid" : "18024a3345a0260960058c121ad5076a"
+    "uid" : "1fa8ba27784f5d82ba3ddd669e1bd310"
   } ],
   "name" : "timeline"
 }
