@@ -1,22 +1,22 @@
 {
-  "uid" : "b6904859225ae80d",
+  "uid" : "35a8acfb93822fc3",
   "name" : "Login",
   "fullName" : "tests.test_rrs_login.TestLogin#test_login",
   "historyId" : "27b8bd5d7305c01e33faa57b177e4d53",
   "time" : {
-    "start" : 1709544869121,
-    "stop" : 1709544873944,
-    "duration" : 4823
+    "start" : 1709545139037,
+    "stop" : 1709545147001,
+    "duration" : 7964
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "driver",
+    "name" : "setup",
     "time" : {
-      "start" : 1709544868794,
-      "stop" : 1709544869121,
-      "duration" : 327
+      "start" : 1709545139037,
+      "stop" : 1709545139037,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -27,11 +27,11 @@
     "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "setup",
+    "name" : "driver",
     "time" : {
-      "start" : 1709544869121,
-      "stop" : 1709544869121,
-      "duration" : 0
+      "start" : 1709545138705,
+      "stop" : 1709545139037,
+      "duration" : 332
     },
     "status" : "passed",
     "steps" : [ ],
@@ -47,9 +47,9 @@
     "steps" : [ {
       "name" : "Open http://raros3.ultra-production.ru page",
       "time" : {
-        "start" : 1709544869121,
-        "stop" : 1709544872013,
-        "duration" : 2892
+        "start" : 1709545139037,
+        "stop" : 1709545144624,
+        "duration" : 5587
       },
       "status" : "passed",
       "steps" : [ ],
@@ -62,9 +62,9 @@
     }, {
       "name" : "Invoices and orders",
       "time" : {
-        "start" : 1709544872013,
-        "stop" : 1709544872393,
-        "duration" : 380
+        "start" : 1709545144625,
+        "stop" : 1709545145122,
+        "duration" : 497
       },
       "status" : "passed",
       "steps" : [ ],
@@ -77,9 +77,9 @@
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1709544872393,
-        "stop" : 1709544872456,
-        "duration" : 63
+        "start" : 1709545145122,
+        "stop" : 1709545145188,
+        "duration" : 66
       },
       "status" : "passed",
       "steps" : [ ],
@@ -95,9 +95,9 @@
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1709544872456,
-        "stop" : 1709544872513,
-        "duration" : 57
+        "start" : 1709545145188,
+        "stop" : 1709545145250,
+        "duration" : 62
       },
       "status" : "passed",
       "steps" : [ ],
@@ -113,9 +113,9 @@
     }, {
       "name" : "Click on submit button",
       "time" : {
-        "start" : 1709544872513,
-        "stop" : 1709544873718,
-        "duration" : 1205
+        "start" : 1709545145250,
+        "stop" : 1709545146786,
+        "duration" : 1536
       },
       "status" : "passed",
       "steps" : [ ],
@@ -128,9 +128,9 @@
     }, {
       "name" : "Close offer",
       "time" : {
-        "start" : 1709544873718,
-        "stop" : 1709544873772,
-        "duration" : 54
+        "start" : 1709545146786,
+        "stop" : 1709545146831,
+        "duration" : 45
       },
       "status" : "passed",
       "steps" : [ ],
@@ -142,11 +142,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "dd1c3b152c8ce86d",
+      "uid" : "fe06fd1b2b20ded7",
       "name" : "Screenshot",
-      "source" : "dd1c3b152c8ce86d.png",
+      "source" : "fe06fd1b2b20ded7.png",
       "type" : "image/png",
-      "size" : 308405
+      "size" : 326889
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -157,8 +157,8 @@
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1709544873944,
-      "stop" : 1709544874001,
+      "start" : 1709545147002,
+      "stop" : 1709545147059,
       "duration" : 57
     },
     "status" : "passed",
@@ -190,7 +190,7 @@
     "value" : "TestLogin"
   }, {
     "name" : "host",
-    "value" : "9b9534b36db1"
+    "value" : "15adb0571a0d"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -220,11 +220,19 @@
         "failed" : 0,
         "broken" : 1,
         "skipped" : 0,
-        "passed" : 3,
+        "passed" : 4,
         "unknown" : 0,
-        "total" : 4
+        "total" : 5
       },
       "items" : [ {
+        "uid" : "b6904859225ae80d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1709544869121,
+          "stop" : 1709544873944,
+          "duration" : 4823
+        }
+      }, {
         "uid" : "7005382e0e9cfdb8",
         "status" : "broken",
         "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
@@ -253,6 +261,6 @@
     },
     "tags" : [ "smoke" ]
   },
-  "source" : "b6904859225ae80d.json",
+  "source" : "35a8acfb93822fc3.json",
   "parameterValues" : [ ]
 }

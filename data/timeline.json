@@ -1,52 +1,52 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "9b9534b36db1",
+    "name" : "15adb0571a0d",
     "children" : [ {
       "name" : "1-MainThread",
       "children" : [ {
         "name" : "Admin test",
-        "uid" : "6c61660440b8e4fa",
-        "parentUid" : "67b6ce44a15885d922dcb9662d67b667",
+        "uid" : "af4417b17c58decc",
+        "parentUid" : "7d9be66fbca7e11f4e3af16b4123300b",
         "status" : "broken",
         "time" : {
-          "start" : 1709544843845,
-          "stop" : 1709544868603,
-          "duration" : 24758
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Search test",
-        "uid" : "82072eb1529e1d51",
-        "parentUid" : "67b6ce44a15885d922dcb9662d67b667",
-        "status" : "passed",
-        "time" : {
-          "start" : 1709544874328,
-          "stop" : 1709544881982,
-          "duration" : 7654
+          "start" : 1709545110817,
+          "stop" : 1709545138506,
+          "duration" : 27689
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Login",
-        "uid" : "b6904859225ae80d",
-        "parentUid" : "67b6ce44a15885d922dcb9662d67b667",
+        "uid" : "35a8acfb93822fc3",
+        "parentUid" : "7d9be66fbca7e11f4e3af16b4123300b",
         "status" : "passed",
         "time" : {
-          "start" : 1709544869121,
-          "stop" : 1709544873944,
-          "duration" : 4823
+          "start" : 1709545139037,
+          "stop" : 1709545147001,
+          "duration" : 7964
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Search test",
+        "uid" : "2ddea03f4eef9e67",
+        "parentUid" : "7d9be66fbca7e11f4e3af16b4123300b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1709545147399,
+          "stop" : 1709545285724,
+          "duration" : 138325
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "67b6ce44a15885d922dcb9662d67b667"
+      "uid" : "7d9be66fbca7e11f4e3af16b4123300b"
     } ],
-    "uid" : "1a21608f299d665da19e39c7cf69ad84"
+    "uid" : "7b7af595e3fd5365798c4161f7764424"
   } ],
   "name" : "timeline"
 }

@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "35a8acfb93822fc3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1709545139037,
+        "stop" : 1709545147001,
+        "duration" : 7964
+      }
+    }, {
       "uid" : "b6904859225ae80d",
       "status" : "passed",
       "time" : {
@@ -46,13 +54,22 @@
   "c88fdcd66de3a048d2882a979fdd01f7" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 3,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "2ddea03f4eef9e67",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1709545147399,
+        "stop" : 1709545285724,
+        "duration" : 138325
+      }
+    }, {
       "uid" : "82072eb1529e1d51",
       "status" : "passed",
       "time" : {
@@ -90,13 +107,22 @@
   "275dd22749e08fb0da5462ae99fdae0b" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 3,
+      "broken" : 4,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "af4417b17c58decc",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'dumpkeys'",
+      "time" : {
+        "start" : 1709545110817,
+        "stop" : 1709545138506,
+        "duration" : 27689
+      }
+    }, {
       "uid" : "6c61660440b8e4fa",
       "status" : "broken",
       "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'dumpkeys'",
