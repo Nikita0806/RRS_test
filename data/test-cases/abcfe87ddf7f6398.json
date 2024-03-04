@@ -1,0 +1,258 @@
+{
+  "uid" : "abcfe87ddf7f6398",
+  "name" : "Admin test",
+  "fullName" : "tests.test_rrs_admin.TestAdmin#test_login",
+  "historyId" : "275dd22749e08fb0da5462ae99fdae0b",
+  "time" : {
+    "start" : 1709545786537,
+    "stop" : 1709545918962,
+    "duration" : 132425
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "self = <test_rrs_admin.TestAdmin object at 0x7f9bdafff650>\n\n    @allure.title(\"Admin test\")\n    @allure.severity(\"Medium\")\n    @pytest.mark.smoke\n    def test_login(self):\n        self.rrs_admin.open()                               # открытие страницы\n        self.rrs_admin.enter_login(self.data.LOGIN_A)         # ввод логина\n        self.rrs_admin.enter_password(self.data.PASSWORD_A)   # ввод пароля\n        self.rrs_admin.click_submit_button()                # нажатие на кнопку входа\n>       self.rrs_admin.drop_down_list()                     # нажатие на выпадающий список\n\ntests/test_rrs_admin.py:16: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/admin_pg.py:52: in drop_down_list\n    self.wait.until(EC.element_to_be_clickable(self.DROP_DOWN_LIST)).click()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"730b14808874d8abcea83aecb9b5753f\")>\nmethod = <function element_to_be_clickable.<locals>._predicate at 0x7f9bda3f0220>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1709545786133,
+      "stop" : 1709545786537,
+      "duration" : 404
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1709545786537,
+      "stop" : 1709545786537,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+    "statusTrace" : "self = <test_rrs_admin.TestAdmin object at 0x7f9bdafff650>\n\n    @allure.title(\"Admin test\")\n    @allure.severity(\"Medium\")\n    @pytest.mark.smoke\n    def test_login(self):\n        self.rrs_admin.open()                               # открытие страницы\n        self.rrs_admin.enter_login(self.data.LOGIN_A)         # ввод логина\n        self.rrs_admin.enter_password(self.data.PASSWORD_A)   # ввод пароля\n        self.rrs_admin.click_submit_button()                # нажатие на кнопку входа\n>       self.rrs_admin.drop_down_list()                     # нажатие на выпадающий список\n\ntests/test_rrs_admin.py:16: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/admin_pg.py:52: in drop_down_list\n    self.wait.until(EC.element_to_be_clickable(self.DROP_DOWN_LIST)).click()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"730b14808874d8abcea83aecb9b5753f\")>\nmethod = <function element_to_be_clickable.<locals>._predicate at 0x7f9bda3f0220>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
+    "steps" : [ {
+      "name" : "Open http://raros3.ultra-production.ru/admin page",
+      "time" : {
+        "start" : 1709545786538,
+        "stop" : 1709545787882,
+        "duration" : 1344
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter login",
+      "time" : {
+        "start" : 1709545787882,
+        "stop" : 1709545787934,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "'garpixadmin'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Enter password",
+      "time" : {
+        "start" : 1709545787934,
+        "stop" : 1709545787995,
+        "duration" : 61
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "'4HA65rdTmGrLswHf'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Click on submit button",
+      "time" : {
+        "start" : 1709545787995,
+        "stop" : 1709545788224,
+        "duration" : 229
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Drop down list",
+      "time" : {
+        "start" : 1709545788224,
+        "stop" : 1709545918961,
+        "duration" : 130737
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/admin_pg.py\", line 52, in drop_down_list\n    self.wait.until(EC.element_to_be_clickable(self.DROP_DOWN_LIST)).click()\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 105, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1709545918992,
+      "stop" : 1709545919077,
+      "duration" : 85
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Admin"
+  }, {
+    "name" : "severity",
+    "value" : "Medium"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_rrs_admin"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAdmin"
+  }, {
+    "name" : "host",
+    "value" : "08a8b859b33e"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_rrs_admin"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "af4417b17c58decc",
+        "status" : "broken",
+        "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'dumpkeys'",
+        "time" : {
+          "start" : 1709545110817,
+          "stop" : 1709545138506,
+          "duration" : 27689
+        }
+      }, {
+        "uid" : "6c61660440b8e4fa",
+        "status" : "broken",
+        "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'dumpkeys'",
+        "time" : {
+          "start" : 1709544843845,
+          "stop" : 1709544868603,
+          "duration" : 24758
+        }
+      }, {
+        "uid" : "2f35c739fbea224a",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+        "time" : {
+          "start" : 1709544655298,
+          "stop" : 1709544655298,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "bb892292f3376cee",
+        "status" : "broken",
+        "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'dumpkeys'",
+        "time" : {
+          "start" : 1709543077004,
+          "stop" : 1709543101953,
+          "duration" : 24949
+        }
+      } ]
+    },
+    "tags" : [ "smoke" ]
+  },
+  "source" : "abcfe87ddf7f6398.json",
+  "parameterValues" : [ ]
+}

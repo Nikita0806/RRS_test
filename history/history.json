@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "c24531c80ed61181",
+      "status" : "passed",
+      "time" : {
+        "start" : 1709545919415,
+        "stop" : 1709545925641,
+        "duration" : 6226
+      }
+    }, {
       "uid" : "35a8acfb93822fc3",
       "status" : "passed",
       "time" : {
@@ -54,13 +62,22 @@
   "c88fdcd66de3a048d2882a979fdd01f7" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 3,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "527aa06b33fd2f63",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?\nMessage: unexpected alert open: {Alert text : Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?}\n  (Session info: headless chrome=112.0.5615.165)",
+      "time" : {
+        "start" : 1709545926039,
+        "stop" : 1709545933061,
+        "duration" : 7022
+      }
+    }, {
       "uid" : "2ddea03f4eef9e67",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
@@ -107,13 +124,22 @@
   "275dd22749e08fb0da5462ae99fdae0b" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 4,
+      "broken" : 5,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "abcfe87ddf7f6398",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1709545786537,
+        "stop" : 1709545918962,
+        "duration" : 132425
+      }
+    }, {
       "uid" : "af4417b17c58decc",
       "status" : "broken",
       "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'dumpkeys'",

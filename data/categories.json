@@ -3,39 +3,39 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'dumpkeys'",
-      "children" : [ {
-        "name" : "Admin test",
-        "uid" : "af4417b17c58decc",
-        "parentUid" : "8f290a4828a56d74845fbbdca2953719",
-        "status" : "broken",
-        "time" : {
-          "start" : 1709545110817,
-          "stop" : 1709545138506,
-          "duration" : 27689
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "8f290a4828a56d74845fbbdca2953719"
-    }, {
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
-        "name" : "Search test",
-        "uid" : "2ddea03f4eef9e67",
+        "name" : "Admin test",
+        "uid" : "abcfe87ddf7f6398",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1709545147399,
-          "stop" : 1709545285724,
-          "duration" : 138325
+          "start" : 1709545786537,
+          "stop" : 1709545918962,
+          "duration" : 132425
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "31bb78a6a95ede3f78b260ed048910d8"
+    }, {
+      "name" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?\nMessage: unexpected alert open: {Alert text : Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?}\n  (Session info: headless chrome=112.0.5615.165)",
+      "children" : [ {
+        "name" : "Search test",
+        "uid" : "527aa06b33fd2f63",
+        "parentUid" : "5324f720c9e2f9fa41f891a31355ae5c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1709545926039,
+          "stop" : 1709545933061,
+          "duration" : 7022
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5324f720c9e2f9fa41f891a31355ae5c"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],
