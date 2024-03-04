@@ -10,7 +10,7 @@ def driver(request):                                    # Фикстура дл�
     # service = Service(executable_path=ChromeDriverManager().install())          # для скачивания файлов
     prefs = {"download.default_directory": f"{os.getcwd()}\downloads"}          # путь к скачиванию файлов
     options.add_experimental_option("prefs", prefs)                             # для скачивания файлов
-    options.add_argument("--headless")                  # для безголового режима для запуска в CI
+    # options.add_argument("--headless")                  # для безголового режима для запуска в CI
     options.add_argument("--no-sandbox")                # доказательство, что это настоящий проект
     options.add_argument("--disable-dev-shm-usage")     #
     options.add_argument("--window-size=1920,1080")     # для размера окна
