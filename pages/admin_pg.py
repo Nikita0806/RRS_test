@@ -31,6 +31,8 @@ class RrsAdminPage(BasePage):
     EXPORT = ("xpath", "/html/body/div[1]/div[3]/div/div[1]/div/form/div/div[2]/input[2]")
     SPINER = ("xpath", "/html/body/div[1]/div[3]/div/div[1]/div/form/div/div[1]/h2")
     SPINER1 = ("xpath", "/html/body/div[1]/div[3]/div/div[1]/div/form/div/section")
+    BODY = ("xpath", "/html/body")
+
 
     @allure.step("Enter login")
     def enter_login(self, login):
@@ -109,7 +111,7 @@ class RrsAdminPage(BasePage):
 
     @allure.step("Click enter")
     def enter(self):
-        self.wait.until(EC.find_element_by_tag_name('body').send_keys(Keys.ENTER))
+        self.wait.until(EC.presence_of_element_located(self.BODY)).send_keys(Keys.ENTER)
         # time.sleep(1)
 
     # keyboard.press('enter')       # вводим клавишу Enter
