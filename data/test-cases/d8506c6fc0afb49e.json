@@ -1,0 +1,482 @@
+{
+  "uid" : "d8506c6fc0afb49e",
+  "name" : "Admin test",
+  "fullName" : "tests.test_rrs_admin.TestAdmin#test_login",
+  "historyId" : "275dd22749e08fb0da5462ae99fdae0b",
+  "time" : {
+    "start" : 1709547005329,
+    "stop" : 1709547032401,
+    "duration" : 27072
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1709547004878,
+      "stop" : 1709547005329,
+      "duration" : 451
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1709547005329,
+      "stop" : 1709547005329,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open http://raros3.ultra-production.ru/admin page",
+      "time" : {
+        "start" : 1709547005330,
+        "stop" : 1709547007001,
+        "duration" : 1671
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter login",
+      "time" : {
+        "start" : 1709547007001,
+        "stop" : 1709547007052,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "'garpixadmin'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter password",
+      "time" : {
+        "start" : 1709547007052,
+        "stop" : 1709547007109,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "'4HA65rdTmGrLswHf'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on submit button",
+      "time" : {
+        "start" : 1709547007109,
+        "stop" : 1709547009786,
+        "duration" : 2677
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Drop down list",
+      "time" : {
+        "start" : 1709547009786,
+        "stop" : 1709547009827,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Reports",
+      "time" : {
+        "start" : 1709547009827,
+        "stop" : 1709547010830,
+        "duration" : 1003
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Suppliers report",
+      "time" : {
+        "start" : 1709547010830,
+        "stop" : 1709547012549,
+        "duration" : 1719
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Add report",
+      "time" : {
+        "start" : 1709547012549,
+        "stop" : 1709547013833,
+        "duration" : 1284
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Data input start",
+      "time" : {
+        "start" : 1709547013833,
+        "stop" : 1709547013887,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "data_start",
+        "value" : "'01.02.2024'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Timer enter start",
+      "time" : {
+        "start" : 1709547013888,
+        "stop" : 1709547013934,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Data input end",
+      "time" : {
+        "start" : 1709547013934,
+        "stop" : 1709547013995,
+        "duration" : 61
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "data_and",
+        "value" : "'29.02.2024'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Timer enter end",
+      "time" : {
+        "start" : 1709547013995,
+        "stop" : 1709547014040,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Scrol http://raros3.ultra-production.ru/admin page",
+      "time" : {
+        "start" : 1709547014040,
+        "stop" : 1709547014043,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Suppliers all",
+      "time" : {
+        "start" : 1709547014043,
+        "stop" : 1709547014107,
+        "duration" : 64
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter report",
+      "time" : {
+        "start" : 1709547014107,
+        "stop" : 1709547015598,
+        "duration" : 1491
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Spiner",
+      "time" : {
+        "start" : 1709547015599,
+        "stop" : 1709547032153,
+        "duration" : 16554
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Scrol http://raros3.ultra-production.ru/admin page",
+      "time" : {
+        "start" : 1709547032153,
+        "stop" : 1709547032156,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Export report",
+      "time" : {
+        "start" : 1709547032342,
+        "stop" : 1709547032401,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "4939a7450bbc8bc8",
+      "name" : "Screenshot",
+      "source" : "4939a7450bbc8bc8.png",
+      "type" : "image/png",
+      "size" : 71962
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 18,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1709547032402,
+      "stop" : 1709547032488,
+      "duration" : 86
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Admin"
+  }, {
+    "name" : "severity",
+    "value" : "Medium"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_rrs_admin"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAdmin"
+  }, {
+    "name" : "host",
+    "value" : "2750470f1e81"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_rrs_admin"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 7,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "f253fafbcc7a05e6",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Скачать отчет по поставщикам?\nMessage: unexpected alert open: {Alert text : Скачать отчет по поставщикам?}\n  (Session info: headless chrome=112.0.5615.165)",
+        "time" : {
+          "start" : 1709546670638,
+          "stop" : 1709546696682,
+          "duration" : 26044
+        }
+      }, {
+        "uid" : "7a038de193e3d32f",
+        "status" : "broken",
+        "statusDetails" : "AttributeError: module 'selenium.webdriver.support.expected_conditions' has no attribute 'find_element_by_tag_name'",
+        "time" : {
+          "start" : 1709546073349,
+          "stop" : 1709546098242,
+          "duration" : 24893
+        }
+      }, {
+        "uid" : "abcfe87ddf7f6398",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1709545786537,
+          "stop" : 1709545918962,
+          "duration" : 132425
+        }
+      }, {
+        "uid" : "af4417b17c58decc",
+        "status" : "broken",
+        "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'dumpkeys'",
+        "time" : {
+          "start" : 1709545110817,
+          "stop" : 1709545138506,
+          "duration" : 27689
+        }
+      }, {
+        "uid" : "6c61660440b8e4fa",
+        "status" : "broken",
+        "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'dumpkeys'",
+        "time" : {
+          "start" : 1709544843845,
+          "stop" : 1709544868603,
+          "duration" : 24758
+        }
+      }, {
+        "uid" : "2f35c739fbea224a",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+        "time" : {
+          "start" : 1709544655298,
+          "stop" : 1709544655298,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "bb892292f3376cee",
+        "status" : "broken",
+        "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'dumpkeys'",
+        "time" : {
+          "start" : 1709543077004,
+          "stop" : 1709543101953,
+          "duration" : 24949
+        }
+      } ]
+    },
+    "tags" : [ "smoke" ]
+  },
+  "source" : "d8506c6fc0afb49e.json",
+  "parameterValues" : [ ]
+}

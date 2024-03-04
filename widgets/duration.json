@@ -1,10 +1,30 @@
 [ {
-  "uid" : "f253fafbcc7a05e6",
+  "uid" : "d8506c6fc0afb49e",
   "name" : "Admin test",
   "time" : {
-    "start" : 1709546670638,
-    "stop" : 1709546696682,
-    "duration" : 26044
+    "start" : 1709547005329,
+    "stop" : 1709547032401,
+    "duration" : 27072
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a1c71a82dbb0da30",
+  "name" : "Login",
+  "time" : {
+    "start" : 1709547032814,
+    "stop" : 1709547039078,
+    "duration" : 6264
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b85e4b1ba7467d2c",
+  "name" : "Search test",
+  "time" : {
+    "start" : 1709547039461,
+    "stop" : 1709547046624,
+    "duration" : 7163
   },
   "status" : "broken",
   "severity" : "normal"

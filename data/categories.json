@@ -3,22 +3,22 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Скачать отчет по поставщикам?\nMessage: unexpected alert open: {Alert text : Скачать отчет по поставщикам?}\n  (Session info: headless chrome=112.0.5615.165)",
+      "name" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?\nMessage: unexpected alert open: {Alert text : Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?}\n  (Session info: headless chrome=112.0.5615.165)",
       "children" : [ {
-        "name" : "Admin test",
-        "uid" : "f253fafbcc7a05e6",
-        "parentUid" : "810fd5bf25fa76d85dd4de333a925f02",
+        "name" : "Search test",
+        "uid" : "b85e4b1ba7467d2c",
+        "parentUid" : "5324f720c9e2f9fa41f891a31355ae5c",
         "status" : "broken",
         "time" : {
-          "start" : 1709546670638,
-          "stop" : 1709546696682,
-          "duration" : 26044
+          "start" : 1709547039461,
+          "stop" : 1709547046624,
+          "duration" : 7163
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "810fd5bf25fa76d85dd4de333a925f02"
+      "uid" : "5324f720c9e2f9fa41f891a31355ae5c"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],

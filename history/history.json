@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 7,
       "unknown" : 0,
-      "total" : 7
+      "total" : 8
     },
     "items" : [ {
+      "uid" : "a1c71a82dbb0da30",
+      "status" : "passed",
+      "time" : {
+        "start" : 1709547032814,
+        "stop" : 1709547039078,
+        "duration" : 6264
+      }
+    }, {
       "uid" : "3c592114ba53e5ee",
       "status" : "passed",
       "time" : {
@@ -70,13 +78,22 @@
   "c88fdcd66de3a048d2882a979fdd01f7" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 4,
+      "broken" : 5,
       "skipped" : 0,
       "passed" : 3,
       "unknown" : 0,
-      "total" : 7
+      "total" : 8
     },
     "items" : [ {
+      "uid" : "b85e4b1ba7467d2c",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?\nMessage: unexpected alert open: {Alert text : Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?}\n  (Session info: headless chrome=112.0.5615.165)",
+      "time" : {
+        "start" : 1709547039461,
+        "stop" : 1709547046624,
+        "duration" : 7163
+      }
+    }, {
       "uid" : "fd2fe8fb342419d0",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?\nMessage: unexpected alert open: {Alert text : Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?}\n  (Session info: headless chrome=112.0.5615.165)",
@@ -143,11 +160,19 @@
       "failed" : 0,
       "broken" : 7,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 7
+      "total" : 8
     },
     "items" : [ {
+      "uid" : "d8506c6fc0afb49e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1709547005329,
+        "stop" : 1709547032401,
+        "duration" : 27072
+      }
+    }, {
       "uid" : "f253fafbcc7a05e6",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Скачать отчет по поставщикам?\nMessage: unexpected alert open: {Alert text : Скачать отчет по поставщикам?}\n  (Session info: headless chrome=112.0.5615.165)",
