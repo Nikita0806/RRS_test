@@ -32,7 +32,7 @@ jobs:                                                               # серви
 
       - name: Generate Allure report                                # Генерация аллур репортов
         run: |                                                      # команда
-          sudo docker-compose run regression /bin/sh -c "allure generate allure-results --clean -o allure-report"    
+          sudo docker-compose run regression /bin/sh -c "allure generate allure-result --clean -o allure-report"    
 
 #      - name: Update Allure history                                 #
 #        run: |                                                      #
