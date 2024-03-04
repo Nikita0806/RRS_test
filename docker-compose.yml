@@ -1,0 +1,17 @@
+version: '3.7'                                                                    # версия
+
+services:                                                                         # какие сервисы будут запускаться
+  regression:                                                                     # регрессионный
+    image: python:3.12.0a4-alpine3.17                                             # из чего будет собираться наш образ
+    build:                                                                        # если не нашёл
+      context: .                                                                  # то
+      dockerfile: Dockerfile                                                      # собирай из докер файла
+    volumes:                                                                      # связь контейнера с репозиторием
+      - ./:/usr/workspace                                                         # вся деректория в нутрь контейнера в папку..
+    command: /bin/sh -c "ls -la && pytest -sv --alluredir=allure-results"         # команда для запуска
+    working_dir: /usr/workspace                                                   # навсякий дубль
+    environment:                                                                  # и доступы
+      - LOGIN=${LOGIN}                                                            # логин
+      - PASSWORD=${PASSWORD}                                                      # пароль
+      - LOGIN_A=${LOGIN_A}                                                        # логин регистрации
+      - PASSWORD_A=${PASSWORD_A}                                                  # пароль регистрации
