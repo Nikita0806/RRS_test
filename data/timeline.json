@@ -1,5 +1,39 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "de889f12fc6d",
+    "children" : [ {
+      "name" : "1-MainThread",
+      "children" : [ {
+        "name" : "Login",
+        "uid" : "951c7fdad7328aa8",
+        "parentUid" : "721e2c781811fad1f7f92fbfe6520621",
+        "status" : "passed",
+        "time" : {
+          "start" : 1709542836486,
+          "stop" : 1709542841466,
+          "duration" : 4980
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Search test",
+        "uid" : "a3037c7f42aeffd2",
+        "parentUid" : "721e2c781811fad1f7f92fbfe6520621",
+        "status" : "passed",
+        "time" : {
+          "start" : 1709542841879,
+          "stop" : 1709542850561,
+          "duration" : 8682
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "721e2c781811fad1f7f92fbfe6520621"
+    } ],
+    "uid" : "18024a3345a0260960058c121ad5076a"
+  } ],
   "name" : "timeline"
 }
