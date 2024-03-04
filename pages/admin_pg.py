@@ -7,7 +7,8 @@ from selenium.webdriver.common.by import By
 from base.base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
-
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
 class RrsAdminPage(BasePage):
 
@@ -106,14 +107,19 @@ class RrsAdminPage(BasePage):
         self.wait.until(EC.element_to_be_clickable(self.EXPORT)).click()
         # time.sleep(1)
 
+    @allure.step("Click enter")
+    def enter(self):
+        self.wait.until(EC.find_element_by_tag_name('body').send_keys(Keys.ENTER))
+        # time.sleep(1)
+
     # keyboard.press('enter')       # вводим клавишу Enter
     # keyboard.release('enter')     # выходим из ввода клавишу Enter
 
-    @allure.step("Click enter")
-    def enter(self):
-        keyboard.press('enter')
-        keyboard.release('enter')
-        time.sleep(10)
+    # @allure.step("Click enter")
+    # def enter(self):
+    #     keyboard.press('enter')
+    #     keyboard.release('enter')
+    #     time.sleep(10)
 
 
     # @allure.step("Click on submit button")

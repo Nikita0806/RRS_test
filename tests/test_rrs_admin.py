@@ -28,5 +28,5 @@ class TestAdmin(BaseTest):
         self.rrs_admin.scrol_down()                         # скролл вниз
         self.rrs_admin.make_screenshot("Screenshot")
         self.rrs_admin.export()                             # нажатие на экспорт
-        self.rrs_admin.enter()                              # нажатие на enter
+        self.rrs_admin.enter()                              # нажатие на enter Не знаю как заставить линукс понимать нажатие на эентер
 
