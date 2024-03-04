@@ -109,10 +109,10 @@ class RrsAdminPage(BasePage):
         self.wait.until(EC.element_to_be_clickable(self.EXPORT)).click()
         # time.sleep(1)
 
-    @allure.step("Click enter")
-    def enter(self):
-        self.wait.until(EC.presence_of_element_located(self.BODY)).send_keys(Keys.ENTER)
-        # time.sleep(1)
+    # @allure.step("Click enter")
+    # def enter(self):
+    #     self.wait.until(EC.presence_of_element_located(self.BODY)).send_keys(Keys.ENTER)
+    #     # time.sleep(1)
 
     # keyboard.press('enter')       # вводим клавишу Enter
     # keyboard.release('enter')     # выходим из ввода клавишу Enter
