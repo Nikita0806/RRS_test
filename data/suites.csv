@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Mon Mar 04 09:49:46 GMT 2024","Mon Mar 04 09:51:58 GMT 2024","132425","tests","test_rrs_admin","TestAdmin","","","Admin test",""
-"passed","Mon Mar 04 09:51:59 GMT 2024","Mon Mar 04 09:52:05 GMT 2024","6226","tests","test_rrs_login","TestLogin","","","Login",""
-"broken","Mon Mar 04 09:52:06 GMT 2024","Mon Mar 04 09:52:13 GMT 2024","7022","tests","test_rrs_search","TestSearch","","","Search test",""
+"passed","Mon Mar 04 09:54:58 GMT 2024","Mon Mar 04 09:55:03 GMT 2024","4991","tests","test_rrs_login","TestLogin","","","Login",""
+"broken","Mon Mar 04 09:54:33 GMT 2024","Mon Mar 04 09:54:58 GMT 2024","24893","tests","test_rrs_admin","TestAdmin","","","Admin test",""
+"broken","Mon Mar 04 09:55:04 GMT 2024","Mon Mar 04 09:55:10 GMT 2024","6385","tests","test_rrs_search","TestSearch","","","Search test",""

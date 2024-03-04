@@ -3,33 +3,33 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.TimeoutException: Message:",
+      "name" : "AttributeError: module 'selenium.webdriver.support.expected_conditions' has no attribute 'find_element_by_tag_name'",
       "children" : [ {
         "name" : "Admin test",
-        "uid" : "abcfe87ddf7f6398",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "uid" : "7a038de193e3d32f",
+        "parentUid" : "acb6c1eefbd1643b6115531c3c0a6033",
         "status" : "broken",
         "time" : {
-          "start" : 1709545786537,
-          "stop" : 1709545918962,
-          "duration" : 132425
+          "start" : 1709546073349,
+          "stop" : 1709546098242,
+          "duration" : 24893
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
+      "uid" : "acb6c1eefbd1643b6115531c3c0a6033"
     }, {
       "name" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?\nMessage: unexpected alert open: {Alert text : Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?}\n  (Session info: headless chrome=112.0.5615.165)",
       "children" : [ {
         "name" : "Search test",
-        "uid" : "527aa06b33fd2f63",
+        "uid" : "fd2fe8fb342419d0",
         "parentUid" : "5324f720c9e2f9fa41f891a31355ae5c",
         "status" : "broken",
         "time" : {
-          "start" : 1709545926039,
-          "stop" : 1709545933061,
-          "duration" : 7022
+          "start" : 1709546104074,
+          "stop" : 1709546110459,
+          "duration" : 6385
         },
         "flaky" : false,
         "newFailed" : false,

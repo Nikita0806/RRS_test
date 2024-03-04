@@ -4,13 +4,13 @@
     "name" : "Admin",
     "children" : [ {
       "name" : "Admin test",
-      "uid" : "abcfe87ddf7f6398",
+      "uid" : "7a038de193e3d32f",
       "parentUid" : "c3b16b8f7d7bd711f8a5b0ecc52eed21",
       "status" : "broken",
       "time" : {
-        "start" : 1709545786537,
-        "stop" : 1709545918962,
-        "duration" : 132425
+        "start" : 1709546073349,
+        "stop" : 1709546098242,
+        "duration" : 24893
       },
       "flaky" : false,
       "newFailed" : false,
@@ -21,13 +21,13 @@
     "name" : "Login",
     "children" : [ {
       "name" : "Login",
-      "uid" : "c24531c80ed61181",
+      "uid" : "3c592114ba53e5ee",
       "parentUid" : "14102d61eef2af473312d4f91dec531b",
       "status" : "passed",
       "time" : {
-        "start" : 1709545919415,
-        "stop" : 1709545925641,
-        "duration" : 6226
+        "start" : 1709546098697,
+        "stop" : 1709546103688,
+        "duration" : 4991
       },
       "flaky" : false,
       "newFailed" : false,
@@ -38,13 +38,13 @@
     "name" : "Search",
     "children" : [ {
       "name" : "Search test",
-      "uid" : "527aa06b33fd2f63",
+      "uid" : "fd2fe8fb342419d0",
       "parentUid" : "b4c391a54a6b5af78881245cab8481cb",
       "status" : "broken",
       "time" : {
-        "start" : 1709545926039,
-        "stop" : 1709545933061,
-        "duration" : 7022
+        "start" : 1709546104074,
+        "stop" : 1709546110459,
+        "duration" : 6385
       },
       "flaky" : false,
       "newFailed" : false,
