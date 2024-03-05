@@ -4,11 +4,19 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "4f65ef5fbfe74712",
+      "status" : "passed",
+      "time" : {
+        "start" : 1709621850724,
+        "stop" : 1709621855583,
+        "duration" : 4859
+      }
+    }, {
       "uid" : "a1c71a82dbb0da30",
       "status" : "passed",
       "time" : {
@@ -80,11 +88,19 @@
       "failed" : 0,
       "broken" : 5,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "63bb4f5438d81f07",
+      "status" : "passed",
+      "time" : {
+        "start" : 1709621855966,
+        "stop" : 1709621863636,
+        "duration" : 7670
+      }
+    }, {
       "uid" : "b85e4b1ba7467d2c",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?\nMessage: unexpected alert open: {Alert text : Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?}\n  (Session info: headless chrome=112.0.5615.165)",
@@ -160,11 +176,19 @@
       "failed" : 0,
       "broken" : 7,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 8
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "d63aa5d5af1cc9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1709621823644,
+        "stop" : 1709621850316,
+        "duration" : 26672
+      }
+    }, {
       "uid" : "d8506c6fc0afb49e",
       "status" : "passed",
       "time" : {

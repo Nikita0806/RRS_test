@@ -1,26 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?\nMessage: unexpected alert open: {Alert text : Данный товар доступен только в количестве 1. Поместить в корзину доступное количество?}\n  (Session info: headless chrome=112.0.5615.165)",
-      "children" : [ {
-        "name" : "Search test",
-        "uid" : "b85e4b1ba7467d2c",
-        "parentUid" : "5324f720c9e2f9fa41f891a31355ae5c",
-        "status" : "broken",
-        "time" : {
-          "start" : 1709547039461,
-          "stop" : 1709547046624,
-          "duration" : 7163
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "5324f720c9e2f9fa41f891a31355ae5c"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ],
+  "children" : [ ],
   "name" : "categories"
 }

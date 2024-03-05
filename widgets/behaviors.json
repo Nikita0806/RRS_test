@@ -1,17 +1,6 @@
 {
   "total" : 3,
   "items" : [ {
-    "uid" : "b4c391a54a6b5af78881245cab8481cb",
-    "name" : "Search",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
     "uid" : "c3b16b8f7d7bd711f8a5b0ecc52eed21",
     "name" : "Admin",
     "statistic" : {
@@ -25,6 +14,17 @@
   }, {
     "uid" : "14102d61eef2af473312d4f91dec531b",
     "name" : "Login",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "b4c391a54a6b5af78881245cab8481cb",
+    "name" : "Search",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
