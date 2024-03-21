@@ -1,12 +1,12 @@
 {
-  "uid" : "d63aa5d5af1cc9d",
+  "uid" : "71cdd60946c46916",
   "name" : "Admin test",
   "fullName" : "tests.test_rrs_admin.TestAdmin#test_login",
   "historyId" : "275dd22749e08fb0da5462ae99fdae0b",
   "time" : {
-    "start" : 1709621823644,
-    "stop" : 1709621850316,
-    "duration" : 26672
+    "start" : 1711023356212,
+    "stop" : 1711023382266,
+    "duration" : 26054
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,9 +14,9 @@
   "beforeStages" : [ {
     "name" : "driver",
     "time" : {
-      "start" : 1709621823287,
-      "stop" : 1709621823643,
-      "duration" : 356
+      "start" : 1711023355829,
+      "stop" : 1711023356212,
+      "duration" : 383
     },
     "status" : "passed",
     "steps" : [ ],
@@ -24,14 +24,14 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   }, {
     "name" : "setup",
     "time" : {
-      "start" : 1709621823643,
-      "stop" : 1709621823644,
-      "duration" : 1
+      "start" : 1711023356212,
+      "stop" : 1711023356212,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -39,17 +39,17 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
       "name" : "Open http://raros3.ultra-production.ru/admin page",
       "time" : {
-        "start" : 1709621823644,
-        "stop" : 1709621825446,
-        "duration" : 1802
+        "start" : 1711023356213,
+        "stop" : 1711023357796,
+        "duration" : 1583
       },
       "status" : "passed",
       "steps" : [ ],
@@ -57,14 +57,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1709621825447,
-        "stop" : 1709621825497,
-        "duration" : 50
+        "start" : 1711023357796,
+        "stop" : 1711023357847,
+        "duration" : 51
       },
       "status" : "passed",
       "steps" : [ ],
@@ -75,14 +75,14 @@
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : true
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1709621825497,
-        "stop" : 1709621825553,
-        "duration" : 56
+        "start" : 1711023357847,
+        "stop" : 1711023357905,
+        "duration" : 58
       },
       "status" : "passed",
       "steps" : [ ],
@@ -93,14 +93,14 @@
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : true
     }, {
       "name" : "Click on submit button",
       "time" : {
-        "start" : 1709621825553,
-        "stop" : 1709621828213,
-        "duration" : 2660
+        "start" : 1711023357905,
+        "stop" : 1711023360311,
+        "duration" : 2406
       },
       "status" : "passed",
       "steps" : [ ],
@@ -108,14 +108,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Drop down list",
       "time" : {
-        "start" : 1709621828213,
-        "stop" : 1709621828254,
-        "duration" : 41
+        "start" : 1711023360311,
+        "stop" : 1711023360353,
+        "duration" : 42
       },
       "status" : "passed",
       "steps" : [ ],
@@ -123,14 +123,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Reports",
       "time" : {
-        "start" : 1709621828254,
-        "stop" : 1709621829434,
-        "duration" : 1180
+        "start" : 1711023360353,
+        "stop" : 1711023361172,
+        "duration" : 819
       },
       "status" : "passed",
       "steps" : [ ],
@@ -138,14 +138,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Suppliers report",
       "time" : {
-        "start" : 1709621829434,
-        "stop" : 1709621830640,
-        "duration" : 1206
+        "start" : 1711023361172,
+        "stop" : 1711023362789,
+        "duration" : 1617
       },
       "status" : "passed",
       "steps" : [ ],
@@ -153,14 +153,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Add report",
       "time" : {
-        "start" : 1709621830640,
-        "stop" : 1709621831720,
-        "duration" : 1080
+        "start" : 1711023362789,
+        "stop" : 1711023364050,
+        "duration" : 1261
       },
       "status" : "passed",
       "steps" : [ ],
@@ -168,13 +168,13 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Data input start",
       "time" : {
-        "start" : 1709621831720,
-        "stop" : 1709621831776,
+        "start" : 1711023364050,
+        "stop" : 1711023364106,
         "duration" : 56
       },
       "status" : "passed",
@@ -186,14 +186,14 @@
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : true
     }, {
       "name" : "Timer enter start",
       "time" : {
-        "start" : 1709621831776,
-        "stop" : 1709621831828,
-        "duration" : 52
+        "start" : 1711023364106,
+        "stop" : 1711023364153,
+        "duration" : 47
       },
       "status" : "passed",
       "steps" : [ ],
@@ -201,14 +201,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Data input end",
       "time" : {
-        "start" : 1709621831828,
-        "stop" : 1709621831883,
-        "duration" : 55
+        "start" : 1711023364153,
+        "stop" : 1711023364217,
+        "duration" : 64
       },
       "status" : "passed",
       "steps" : [ ],
@@ -219,13 +219,13 @@
       } ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : true
     }, {
       "name" : "Timer enter end",
       "time" : {
-        "start" : 1709621831883,
-        "stop" : 1709621831928,
+        "start" : 1711023364217,
+        "stop" : 1711023364262,
         "duration" : 45
       },
       "status" : "passed",
@@ -234,13 +234,13 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Scrol http://raros3.ultra-production.ru/admin page",
       "time" : {
-        "start" : 1709621831928,
-        "stop" : 1709621831931,
+        "start" : 1711023364262,
+        "stop" : 1711023364265,
         "duration" : 3
       },
       "status" : "passed",
@@ -249,13 +249,13 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Suppliers all",
       "time" : {
-        "start" : 1709621831931,
-        "stop" : 1709621831994,
+        "start" : 1711023364265,
+        "stop" : 1711023364328,
         "duration" : 63
       },
       "status" : "passed",
@@ -264,14 +264,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Enter report",
       "time" : {
-        "start" : 1709621831994,
-        "stop" : 1709621833903,
-        "duration" : 1909
+        "start" : 1711023364328,
+        "stop" : 1711023365762,
+        "duration" : 1434
       },
       "status" : "passed",
       "steps" : [ ],
@@ -279,14 +279,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Spiner",
       "time" : {
-        "start" : 1709621833903,
-        "stop" : 1709621850068,
-        "duration" : 16165
+        "start" : 1711023365763,
+        "stop" : 1711023382013,
+        "duration" : 16250
       },
       "status" : "passed",
       "steps" : [ ],
@@ -294,14 +294,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Scrol http://raros3.ultra-production.ru/admin page",
       "time" : {
-        "start" : 1709621850069,
-        "stop" : 1709621850074,
-        "duration" : 5
+        "start" : 1711023382013,
+        "stop" : 1711023382015,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -309,14 +309,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Export report",
       "time" : {
-        "start" : 1709621850255,
-        "stop" : 1709621850316,
-        "duration" : 61
+        "start" : 1711023382209,
+        "stop" : 1711023382266,
+        "duration" : 57
       },
       "status" : "passed",
       "steps" : [ ],
@@ -324,27 +324,27 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "25201f2666eb9cf1",
+      "uid" : "5bb0012035b5f7a4",
       "name" : "Screenshot",
-      "source" : "25201f2666eb9cf1.png",
+      "source" : "5bb0012035b5f7a4.png",
       "type" : "image/png",
       "size" : 71962
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 18
+    "stepsCount" : 18,
+    "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "driver::0",
     "time" : {
-      "start" : 1709621850317,
-      "stop" : 1709621850402,
+      "start" : 1711023382267,
+      "stop" : 1711023382352,
       "duration" : 85
     },
     "status" : "passed",
@@ -353,15 +353,15 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "labels" : [ {
-    "name" : "feature",
-    "value" : "Admin"
-  }, {
     "name" : "severity",
     "value" : "Medium"
+  }, {
+    "name" : "feature",
+    "value" : "Admin"
   }, {
     "name" : "tag",
     "value" : "smoke"
@@ -376,7 +376,7 @@
     "value" : "TestAdmin"
   }, {
     "name" : "host",
-    "value" : "4b74c38de030"
+    "value" : "edd820b79393"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -406,11 +406,19 @@
         "failed" : 0,
         "broken" : 7,
         "skipped" : 0,
-        "passed" : 2,
+        "passed" : 3,
         "unknown" : 0,
-        "total" : 9
+        "total" : 10
       },
       "items" : [ {
+        "uid" : "d63aa5d5af1cc9d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1709621823644,
+          "stop" : 1709621850316,
+          "duration" : 26672
+        }
+      }, {
         "uid" : "d8506c6fc0afb49e",
         "status" : "passed",
         "time" : {
@@ -485,6 +493,6 @@
     },
     "tags" : [ "smoke" ]
   },
-  "source" : "d63aa5d5af1cc9d.json",
+  "source" : "71cdd60946c46916.json",
   "parameterValues" : [ ]
 }

@@ -1,30 +1,30 @@
 [ {
-  "uid" : "d63aa5d5af1cc9d",
+  "uid" : "71cdd60946c46916",
   "name" : "Admin test",
   "time" : {
-    "start" : 1709621823644,
-    "stop" : 1709621850316,
-    "duration" : 26672
+    "start" : 1711023356212,
+    "stop" : 1711023382266,
+    "duration" : 26054
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "63bb4f5438d81f07",
+  "uid" : "9baf123910a1ca98",
   "name" : "Search test",
   "time" : {
-    "start" : 1709621855966,
-    "stop" : 1709621863636,
-    "duration" : 7670
+    "start" : 1711023389240,
+    "stop" : 1711023400343,
+    "duration" : 11103
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4f65ef5fbfe74712",
+  "uid" : "a3d97fcf47b877fb",
   "name" : "Login",
   "time" : {
-    "start" : 1709621850724,
-    "stop" : 1709621855583,
-    "duration" : 4859
+    "start" : 1711023382676,
+    "stop" : 1711023388857,
+    "duration" : 6181
   },
   "status" : "passed",
   "severity" : "normal"
