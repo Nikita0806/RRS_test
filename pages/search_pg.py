@@ -9,14 +9,14 @@ class RrsSearchPage(BasePage):
 
     PAGE_URL = Links.SEARCH_PAGE
 
-    SEARCH_BUTTON = ("xpath", "/html/body/table/tbody/tr[2]/td[1]/ul/li[2]/a")
-    ENTER_SEARCH_1 = ("xpath", "/html/body/table/tbody/tr[2]/td[2]/form/table/tbody/tr[2]/td[10]/div/a")
-    ENTER_SEARCH_2 = ("xpath", "/html/body/table/tbody/tr[2]/td[2]/form/table/tbody/tr[3]/td[10]/div/a")
-    SEARCH = ("xpath", "/html/body/table/tbody/tr[1]/td[2]/ul/li[4]/a")
-    CHECK = ("xpath", "/html/body/table/tbody/tr[2]/td[2]/form/table/tbody/tr[3]/td[1]/input")
-    DELETE = ("xpath", "/html/body/table/tbody/tr[2]/td[2]/form/button[2]")
-    DESIGN = ("xpath", "/html/body/table/tbody/tr[2]/td[2]/form/button[4]")
-    DESIGN_OK = ("xpath", "/html/body/table/tbody/tr[2]/td[2]/form/input[3]")
+    SEARCH_BUTTON = ("css selector", "#sidebar > ul > li:nth-child(2) > a")
+    ENTER_SEARCH_1 = ("css selector", "#content > form > table > tbody > tr:nth-child(2) > td.basket_add > div > a")
+    ENTER_SEARCH_2 = ("css selector", "#content > form > table > tbody > tr:nth-child(3) > td.basket_add > div > a")
+    SEARCH = ("css selector", "#header > ul > li:nth-child(4) > a")
+    CHECK = ("name", "delete-948507790")
+    DELETE = ("css selector", "#content > form > button:nth-child(4)")
+    DESIGN = ("css selector", "#content > form > button:nth-child(6)")
+    DESIGN_OK = ("css selector", "#content > form > input.button")
 
     @allure.step("search button")
     def search_button(self):
