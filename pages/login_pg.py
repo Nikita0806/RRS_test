@@ -9,11 +9,11 @@ class RrsLoginPage(BasePage):
 
     PAGE_URL = Links.HOST
 
-    INVOICES_AND_ORDERS = ("xpath", "/html/body/table/tbody/tr[1]/td[2]/ul/li[5]/a")
+    INVOICES_AND_ORDERS = ("css selector", "#header > ul > li:nth-child(5) > a")
     USERNAME_FIELD = ("xpath", "/html/body/table/tbody/tr[2]/td[2]/form/fieldset/div[1]/div/input")
     PASSWORD_FIELD = ("xpath", "/html/body/table/tbody/tr[2]/td[2]/form/fieldset/div[2]/div/input")
-    SUBMIT_BUTTON = ("xpath", "/html/body/table/tbody/tr[2]/td[2]/form/input")
-    CLOSE_OFFER = ("xpath", "/html/body/div[3]/div/a")
+    SUBMIT_BUTTON = ("css selector", "#content > form > input")
+    CLOSE_OFFER = ("css selector", "#weekdays-modal > div > a")
 
     @allure.step("Invoices and orders")
     def invoices_and_orders(self):
